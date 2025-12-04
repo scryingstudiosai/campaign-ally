@@ -1,0 +1,19 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NEXT_PUBLIC_SUPABASE_URL = "https://mpfuebhmhxtenuxzhrvf.supabase.co"
+  NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1wZnVlYmhtaHh0ZW51eHpocnZmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjExNjMyMjksImV4cCI6MjA3NjczOTIyOX0.oPZ-YA3utlxKis0NXSGkR2vfc619zc1FY98VWMZX_dA"
+  NODE_VERSION = "18"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[functions]
+  node_bundler = "esbuild"

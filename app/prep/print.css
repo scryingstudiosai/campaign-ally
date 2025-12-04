@@ -1,0 +1,175 @@
+@media print {
+  @page {
+    margin: 0.75in;
+    size: letter;
+  }
+
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #000;
+    background: #fff;
+  }
+
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a {
+    text-decoration: underline;
+    color: #000;
+  }
+
+  a[href]:after {
+    content: none;
+  }
+
+  h1 {
+    font-size: 24pt;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 12pt;
+    page-break-after: avoid;
+    border-bottom: 2pt solid #000;
+    padding-bottom: 6pt;
+  }
+
+  h2 {
+    font-size: 18pt;
+    font-weight: bold;
+    margin-top: 18pt;
+    margin-bottom: 10pt;
+    page-break-after: avoid;
+  }
+
+  h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-top: 14pt;
+    margin-bottom: 8pt;
+    page-break-after: avoid;
+  }
+
+  h4, h5, h6 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 10pt;
+    margin-bottom: 6pt;
+    page-break-after: avoid;
+  }
+
+  p {
+    margin: 0 0 8pt 0;
+    orphans: 3;
+    widows: 3;
+  }
+
+  blockquote {
+    margin: 12pt 24pt;
+    padding: 8pt 12pt;
+    border-left: 3pt solid #333;
+    background: #f5f5f5;
+    font-style: italic;
+    page-break-inside: avoid;
+  }
+
+  ul, ol {
+    margin: 0 0 12pt 24pt;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 4pt;
+  }
+
+  strong, b {
+    font-weight: bold;
+  }
+
+  em, i {
+    font-style: italic;
+  }
+
+  hr {
+    border: none;
+    border-top: 1pt solid #333;
+    margin: 18pt 0;
+  }
+
+  pre, code {
+    font-family: 'Courier New', monospace;
+    font-size: 10pt;
+    background: #f5f5f5;
+    padding: 2pt 4pt;
+    border: 1pt solid #ddd;
+  }
+
+  pre {
+    padding: 8pt;
+    margin: 8pt 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    page-break-inside: avoid;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12pt 0;
+    page-break-inside: avoid;
+  }
+
+  th, td {
+    border: 1pt solid #333;
+    padding: 6pt;
+    text-align: left;
+  }
+
+  th {
+    background: #e0e0e0;
+    font-weight: bold;
+  }
+
+  img {
+    max-width: 100%;
+    page-break-inside: avoid;
+  }
+
+  .no-print,
+  nav,
+  footer,
+  aside,
+  button,
+  .btn,
+  .sidebar,
+  .header,
+  .navigation {
+    display: none !important;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+  .avoid-break {
+    page-break-inside: avoid;
+  }
+
+  .scene-section {
+    page-break-inside: avoid;
+    margin-bottom: 18pt;
+  }
+
+  .dm-only {
+    border: 1pt dashed #666;
+    padding: 8pt;
+    margin: 8pt 0;
+    background: #fafafa;
+  }
+
+  .player-mode .dm-only {
+    display: none;
+  }
+}

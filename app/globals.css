@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 234 15% 11%;
+    --foreground: 220 10% 96%;
+    --card: 234 15% 16%;
+    --card-foreground: 220 10% 96%;
+    --popover: 234 15% 16%;
+    --popover-foreground: 220 10% 96%;
+    --primary: 174 100% 56%;
+    --primary-foreground: 234 15% 11%;
+    --secondary: 234 12% 20%;
+    --secondary-foreground: 220 10% 96%;
+    --muted: 234 12% 24%;
+    --muted-foreground: 220 10% 65%;
+    --accent: 174 100% 56%;
+    --accent-foreground: 234 15% 11%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 10% 98%;
+    --border: 234 12% 25%;
+    --input: 234 12% 22%;
+    --ring: 174 100% 56%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    letter-spacing: -0.011em;
+    line-height: 1.6;
+    background: #1B1B25;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  #__next,
+  main {
+    position: relative;
+    z-index: 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+
+  button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+
+  label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+}
+
+@layer components {
+  .gradient-primary {
+    background: linear-gradient(135deg, #3BE3D5 0%, #2BBFB3 100%);
+  }
+
+  .gradient-primary-hover {
+    background: linear-gradient(135deg, #2BBFB3 0%, #1FA599 100%);
+  }
+
+  .card-soft-shadow {
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.03), 0 2px 8px -2px rgba(0, 0, 0, 0.3);
+  }
+
+  .card-hover {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.04), 0 4px 16px -4px rgba(0, 0, 0, 0.4);
+  }
+
+  .glow-teal {
+    box-shadow: 0 0 20px rgba(59, 227, 213, 0.25), 0 0 40px rgba(59, 227, 213, 0.1);
+  }
+
+  .glow-teal-sm {
+    box-shadow: 0 0 12px rgba(59, 227, 213, 0.2);
+  }
+
+  .text-gradient {
+    color: #3BE3D5;
+  }
+
+  .bg-weave {
+    background: linear-gradient(135deg, #1B1B25 0%, #1F1F2A 100%);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.4s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.4s ease-out;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.96);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+
+  .animate-shimmer {
+    animation: shimmer 0.8s ease-in-out;
+  }
+
+  .logo-wordmark-campaign {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+  }
+
+  .logo-wordmark-ally {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+  }
+
+  .tagline {
+    font-variant: small-caps;
+    color: #3BE3D5;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+  }
+
+  .forge-content.enriched .entity-link {
+    cursor: pointer;
+    position: relative;
+    display: inline;
+    transition: all 0.2s ease;
+  }
+
+  .forge-content.enriched .entity-link.memory-link {
+    color: #00D9FF;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 217, 255, 0.3);
+  }
+
+  .forge-content.enriched .entity-link.memory-link:hover {
+    color: #33E3FF;
+    border-bottom-color: #00D9FF;
+  }
+
+  .forge-content.enriched .entity-link.conjure-link {
+    color: #4A90E2;
+    text-shadow:
+      0 0 10px rgba(74, 144, 226, 0.5),
+      0 0 20px rgba(74, 144, 226, 0.3);
+    font-weight: 500;
+  }
+
+  .forge-content.enriched .entity-link.conjure-link:hover {
+    color: #6BA8F5;
+    text-shadow:
+      0 0 15px rgba(74, 144, 226, 0.7),
+      0 0 25px rgba(74, 144, 226, 0.4);
+  }
+
+  .forge-content.enriched .entity-link.conjure-link .sparkle {
+    font-size: 0.7em;
+    margin-left: 2px;
+    opacity: 0.8;
+    display: inline-block;
+    animation: sparkle 2s ease-in-out infinite;
+  }
+
+  .forge-content.enriched .entity-link.conjure-link::before {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    margin-bottom: 5px;
+    z-index: 10;
+  }
+
+  .forge-content.enriched .entity-link.conjure-link:hover::before {
+    opacity: 1;
+  }
+
+  @keyframes sparkle {
+    0%, 100% {
+      opacity: 0.8;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+
+  .forge-content.enriched .entity-link.conjuring {
+    opacity: 0.6;
+    pointer-events: none;
+    animation: pulse 1s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 0.3;
+    }
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .scrollbar-track-gray-900 {
+    scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+  }
+}

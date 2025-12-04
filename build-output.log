@@ -1,0 +1,259 @@
+
+> nextjs@0.1.0 build
+> next build
+
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+   Creating an optimized production build...
+ ⚠ Compiled with warnings
+
+./node_modules/@supabase/auth-js/dist/main/lib/helpers.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@supabase/auth-js/dist/main/lib/helpers.js
+./node_modules/@supabase/auth-js/dist/main/GoTrueAdminApi.js
+./node_modules/@supabase/auth-js/dist/main/index.js
+./node_modules/@supabase/supabase-js/dist/main/index.js
+./lib/supabase/client.ts
+./app/page.tsx
+
+./node_modules/@supabase/functions-js/dist/main/helper.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@supabase/functions-js/dist/main/helper.js
+./node_modules/@supabase/functions-js/dist/main/FunctionsClient.js
+./node_modules/@supabase/functions-js/dist/main/index.js
+./node_modules/@supabase/supabase-js/dist/main/index.js
+./lib/supabase/client.ts
+./app/page.tsx
+
+./node_modules/@supabase/realtime-js/dist/main/RealtimeClient.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@supabase/realtime-js/dist/main/RealtimeClient.js
+./node_modules/@supabase/realtime-js/dist/main/index.js
+./node_modules/@supabase/supabase-js/dist/main/index.js
+./lib/supabase/client.ts
+./app/page.tsx
+
+./node_modules/@supabase/storage-js/dist/main/lib/helpers.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@supabase/storage-js/dist/main/lib/helpers.js
+./node_modules/@supabase/storage-js/dist/main/packages/StorageAnalyticsApi.js
+./node_modules/@supabase/storage-js/dist/main/index.js
+./node_modules/@supabase/supabase-js/dist/main/SupabaseClient.js
+./node_modules/@supabase/supabase-js/dist/main/index.js
+./lib/supabase/client.ts
+./app/page.tsx
+
+./node_modules/@supabase/storage-js/dist/main/lib/helpers.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@supabase/storage-js/dist/main/lib/helpers.js
+./node_modules/@supabase/storage-js/dist/main/packages/StorageAnalyticsApi.js
+./node_modules/@supabase/storage-js/dist/main/index.js
+./node_modules/@supabase/supabase-js/dist/main/SupabaseClient.js
+./node_modules/@supabase/supabase-js/dist/main/index.js
+./lib/supabase/client.ts
+./app/page.tsx
+
+./node_modules/@supabase/storage-js/dist/main/lib/vectors/helpers.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@supabase/storage-js/dist/main/lib/vectors/helpers.js
+./node_modules/@supabase/storage-js/dist/main/lib/vectors/index.js
+./node_modules/@supabase/storage-js/dist/main/index.js
+./node_modules/@supabase/supabase-js/dist/main/SupabaseClient.js
+./node_modules/@supabase/supabase-js/dist/main/index.js
+./lib/supabase/client.ts
+./app/page.tsx
+
+./node_modules/@supabase/storage-js/dist/main/lib/vectors/helpers.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@supabase/storage-js/dist/main/lib/vectors/helpers.js
+./node_modules/@supabase/storage-js/dist/main/lib/vectors/index.js
+./node_modules/@supabase/storage-js/dist/main/index.js
+./node_modules/@supabase/supabase-js/dist/main/SupabaseClient.js
+./node_modules/@supabase/supabase-js/dist/main/index.js
+./lib/supabase/client.ts
+./app/page.tsx
+
+./node_modules/@supabase/auth-js/dist/main/lib/helpers.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@supabase/auth-js/dist/main/lib/helpers.js
+./node_modules/@supabase/auth-js/dist/main/GoTrueAdminApi.js
+./node_modules/@supabase/auth-js/dist/main/index.js
+./node_modules/@supabase/supabase-js/dist/main/index.js
+./app/api/debug/diagnostics/route.ts
+
+./node_modules/@supabase/functions-js/dist/main/helper.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@supabase/functions-js/dist/main/helper.js
+./node_modules/@supabase/functions-js/dist/main/FunctionsClient.js
+./node_modules/@supabase/functions-js/dist/main/index.js
+./node_modules/@supabase/supabase-js/dist/main/index.js
+./app/api/debug/diagnostics/route.ts
+
+./node_modules/@supabase/realtime-js/dist/main/RealtimeClient.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@supabase/realtime-js/dist/main/RealtimeClient.js
+./node_modules/@supabase/realtime-js/dist/main/index.js
+./node_modules/@supabase/supabase-js/dist/main/index.js
+./app/api/debug/diagnostics/route.ts
+
+./node_modules/@supabase/storage-js/dist/main/lib/helpers.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@supabase/storage-js/dist/main/lib/helpers.js
+./node_modules/@supabase/storage-js/dist/main/packages/StorageAnalyticsApi.js
+./node_modules/@supabase/storage-js/dist/main/index.js
+./node_modules/@supabase/supabase-js/dist/main/SupabaseClient.js
+./node_modules/@supabase/supabase-js/dist/main/index.js
+./app/api/debug/diagnostics/route.ts
+
+./node_modules/@supabase/storage-js/dist/main/lib/helpers.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@supabase/storage-js/dist/main/lib/helpers.js
+./node_modules/@supabase/storage-js/dist/main/packages/StorageAnalyticsApi.js
+./node_modules/@supabase/storage-js/dist/main/index.js
+./node_modules/@supabase/supabase-js/dist/main/SupabaseClient.js
+./node_modules/@supabase/supabase-js/dist/main/index.js
+./app/api/debug/diagnostics/route.ts
+
+./node_modules/@supabase/storage-js/dist/main/lib/vectors/helpers.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@supabase/storage-js/dist/main/lib/vectors/helpers.js
+./node_modules/@supabase/storage-js/dist/main/lib/vectors/index.js
+./node_modules/@supabase/storage-js/dist/main/index.js
+./node_modules/@supabase/supabase-js/dist/main/SupabaseClient.js
+./node_modules/@supabase/supabase-js/dist/main/index.js
+./app/api/debug/diagnostics/route.ts
+
+./node_modules/@supabase/storage-js/dist/main/lib/vectors/helpers.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@supabase/storage-js/dist/main/lib/vectors/helpers.js
+./node_modules/@supabase/storage-js/dist/main/lib/vectors/index.js
+./node_modules/@supabase/storage-js/dist/main/index.js
+./node_modules/@supabase/supabase-js/dist/main/SupabaseClient.js
+./node_modules/@supabase/supabase-js/dist/main/index.js
+./app/api/debug/diagnostics/route.ts
+
+   Skipping linting
+   Checking validity of types...
+   Collecting page data...
+   Generating static pages (0/20)...
+   Generating static pages (5/20)
+
+   Generating static pages (10/20)
+
+   Generating static pages (15/20)
+
+ ✓ Generating static pages (20/20)
+   Finalizing page optimization...
+
+Route (app)                                Size     First Load JS
+┌ ○ /                                      2.06 kB         135 kB
+├ ○ /_not-found                            878 B          84.4 kB
+├ λ /api/ai/forge/backstory                0 B                0 B
+├ λ /api/ai/forge/encounter-seq            0 B                0 B
+├ λ /api/ai/forge/guild                    0 B                0 B
+├ λ /api/ai/forge/hero                     0 B                0 B
+├ λ /api/ai/forge/inn                      0 B                0 B
+├ λ /api/ai/forge/item                     0 B                0 B
+├ λ /api/ai/forge/landmark                 0 B                0 B
+├ λ /api/ai/forge/loot                     0 B                0 B
+├ λ /api/ai/forge/monster                  0 B                0 B
+├ λ /api/ai/forge/nation                   0 B                0 B
+├ λ /api/ai/forge/oddities                 0 B                0 B
+├ λ /api/ai/forge/puzzle                   0 B                0 B
+├ λ /api/ai/forge/scroll                   0 B                0 B
+├ λ /api/ai/forge/shop                     0 B                0 B
+├ λ /api/ai/forge/spell                    0 B                0 B
+├ λ /api/ai/forge/stat-block               0 B                0 B
+├ λ /api/ai/forge/town                     0 B                0 B
+├ λ /api/ai/forge/trap                     0 B                0 B
+├ λ /api/ai/forge/villain                  0 B                0 B
+├ λ /api/ai/forge/weather                  0 B                0 B
+├ λ /api/ai/panic                          0 B                0 B
+├ λ /api/ai/prep/apply-canon-fixes         0 B                0 B
+├ λ /api/ai/prep/canon-check               0 B                0 B
+├ λ /api/ai/prep/edit-beat                 0 B                0 B
+├ λ /api/ai/prep/expand-scene              0 B                0 B
+├ λ /api/ai/prep/expand-scene-stream       0 B                0 B
+├ λ /api/ai/prep/outline                   0 B                0 B
+├ λ /api/campaigns/[id]/tags               0 B                0 B
+├ λ /api/codex                             0 B                0 B
+├ λ /api/codex/ai/canon-check              0 B                0 B
+├ λ /api/codex/ai/coach                    0 B                0 B
+├ λ /api/codex/ai/generate-arc             0 B                0 B
+├ λ /api/codex/ai/generate-faction         0 B                0 B
+├ λ /api/codex/ai/generate-timeline-event  0 B                0 B
+├ λ /api/debug/diagnostics                 0 B                0 B
+├ λ /api/forge/random-table                0 B                0 B
+├ λ /api/forge/wild-magic                  0 B                0 B
+├ λ /api/import/batches                    0 B                0 B
+├ λ /api/memory                            0 B                0 B
+├ λ /api/memory/[id]                       0 B                0 B
+├ λ /api/memory/entries                    0 B                0 B
+├ λ /api/memory/entries/[id]               0 B                0 B
+├ λ /api/memory/entries/[id]/archive       0 B                0 B
+├ λ /api/memory/entries/[id]/pin           0 B                0 B
+├ λ /api/memory/save                       0 B                0 B
+├ λ /api/memory/search                     0 B                0 B
+├ λ /api/memory/stats                      0 B                0 B
+├ λ /api/prep/convert-to-scenes            0 B                0 B
+├ λ /api/prep/export/markdown              0 B                0 B
+├ λ /api/prep/scenes                       0 B                0 B
+├ λ /api/prep/scenes/[id]                  0 B                0 B
+├ λ /api/prep/scenes/reorder               0 B                0 B
+├ λ /api/prep/sessions                     0 B                0 B
+├ λ /api/prep/sessions/[id]                0 B                0 B
+├ λ /api/prep/sessions/[id]/summary        0 B                0 B
+├ λ /api/relations                         0 B                0 B
+├ λ /api/relations/[id]                    0 B                0 B
+├ λ /api/relations/auto-create             0 B                0 B
+├ ○ /app                                   306 B          83.8 kB
+├ ○ /app/account                           1.37 kB         142 kB
+├ ○ /app/codex                             13.7 kB         203 kB
+├ ○ /app/forge                             11.5 kB         187 kB
+├ ○ /app/memory                            169 kB          361 kB
+├ ○ /app/panic                             20.3 kB         202 kB
+├ ○ /app/prep                              17.6 kB         199 kB
+├ λ /app/prep/[sessionId]                  16.8 kB         140 kB
+├ ○ /auth/sign-in                          5.29 kB         152 kB
+└ ○ /auth/sign-up                          5.19 kB         152 kB
++ First Load JS shared by all              83.5 kB
+  ├ chunks/1179-db7d697e90fbac55.js        27.2 kB
+  ├ chunks/bf6a786c-1b8b228d7789efd2.js    53.7 kB
+  ├ chunks/main-app-e6793e1295bd5b33.js    228 B
+  └ chunks/webpack-989ad93f20eee8aa.js     2.37 kB
+
+
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
